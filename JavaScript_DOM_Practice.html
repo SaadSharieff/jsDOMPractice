@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>JS DOM paragraph style</title>
+        <style>
+            .styleChange {
+                font: bold 36px times;
+            }
+        </style>
+    </head> 
+    <body>
+        <p id ='text'>JavaScript Exercises</p> 
+        <div>
+            <button id="jsstyle" onclick="js_style()">Style</button>
+        </div>
+        <script>
+            function js_style() {
+                var change = document.getElementById('text');
+                change.setAttribute("class", "styleChange");
+            }
+        </script>
+    </body>
+</html>
